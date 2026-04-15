@@ -1,112 +1,127 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ATELIER/VOID — Cinematic Fashion Scroll</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <main class="experience" id="experience">
-      <section class="viewport" id="viewport">
-        <header class="topbar">
-          <span>ATELIER/VOID</span>
-          <span>COLLECTION SS26</span>
-        </header>
-
-        <div class="chapter-label" id="chapter-label">CHAPTER 01 / FLOAT</div>
-
-        <div class="stage stage-items" id="stage-items">
-          <article class="garment jacket" data-depth="0.85">
-            <div class="object-card">
-              <span>#01</span>
-              <h3>Contour Jacket</h3>
-              <p>Architectural line / matte shell.</p>
-            </div>
-          </article>
-
-          <article class="garment tshirt" data-depth="0.5">
-            <div class="object-card">
-              <span>#02</span>
-              <h3>Ghost T-Shirt</h3>
-              <p>Optic jersey / silent branding.</p>
-            </div>
-          </article>
-
-          <article class="garment hoodie" data-depth="0.95">
-            <div class="object-card">
-              <span>#03</span>
-              <h3>Core Hoodie</h3>
-              <p>Dense fleece / sculpted hood.</p>
-            </div>
-          </article>
-        </div>
-
-        <section class="stage stage-type" id="stage-type">
-          <p class="micro">FASHION VISUAL LANGUAGES</p>
-          <h1>
-            CINEMATIC<br />
-            APPAREL<br />
-            SYSTEMS
-          </h1>
-          <p class="meta">FOR CONTEMPORARY ↗ BRANDS</p>
-        </section>
-
-        <section class="stage stage-focus" id="stage-focus">
-          <div class="focus-shell"></div>
-          <div class="focus-copy">
-            <span>01 / FOUNDATION</span>
-            <h2>A BASIS</h2>
-            <p>One product isolated. Everything else recedes.</p>
-          </div>
-        </section>
-
-        <section class="stage stage-tech" id="stage-tech">
-          <div class="tech-grid">
-            <div class="tech-block left">
-              <p class="kicker">VISUAL LANGUAGE</p>
-              <h3>Refresh your wardrobe basis.</h3>
-              <p>Engineered proportions, neutral tones, premium textile logic.</p>
-            </div>
-            <div class="tech-card">#01</div>
-            <div class="tech-block right">
-              <p>FABRIC · 510GSM COTTON BLEND</p>
-              <p>FIT · STRUCTURED RELAXED</p>
-              <p>PALETTE · BONE / CARBON / ASH</p>
-            </div>
-          </div>
-        </section>
-
-        <section class="stage stage-editorial" id="stage-editorial">
-          <article class="editor-card">
-            <span>CUT 02</span>
-            <h4>T-SHIRT FRAME</h4>
-            <p>Lightweight expression with controlled typography and strict spacing.</p>
-          </article>
-          <article class="editor-card">
-            <span>CUT 03</span>
-            <h4>HOODIE FRAME</h4>
-            <p>Mass and softness balanced for a confident minimal silhouette.</p>
-          </article>
-          <article class="editor-card wide">
-            <span>MANIFESTO</span>
-            <h4>WE EXPERIMENT WITH UNUSUAL VISUAL DISCIPLINES.</h4>
-          </article>
-        </section>
-
-        <section class="stage stage-final" id="stage-final">
-          <h2>MINIMALISM IS A MUST</h2>
-          <p>ATELIER/VOID — COLLECTION RELEASE 2026</p>
-        </section>
-      </section>
-    </main>
-
-    <script src="script.js"></script>
-  </body>
-</html>
+ (cd "$(git rev-parse --show-toplevel)" && git apply --3way <<'EOF' 
+diff --git a/index.html b/index.html
+new file mode 100644
+index 0000000000000000000000000000000000000000..8c51334a7b1d9331df83c6c15a38e0f14717f4e7
+--- /dev/null
++++ b/index.html
+@@ -0,0 +1,117 @@
++<!doctype html>
++<html lang="en">
++  <head>
++    <meta charset="UTF-8" />
++    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
++    <title>ATELIER/VOID — Chaptered Fashion Experience</title>
++    <link rel="preconnect" href="https://fonts.googleapis.com" />
++    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
++    <link
++      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
++      rel="stylesheet"
++    />
++    <link rel="stylesheet" href="styles.css" />
++  </head>
++  <body>
++    <div class="hero-logo" id="hero-logo">ATELIER/VOID</div>
++
++    <header class="site-header" id="site-header">
++      <div class="header-logo">A/V</div>
++      <nav>
++        <a href="#">Collection</a>
++        <a href="#">Looks</a>
++        <a href="#">Journal</a>
++        <a href="#">Store</a>
++      </nav>
++    </header>
++
++    <header class="ui-bar">
++      <span>ATELIER/VOID</span>
++      <span id="chapter-indicator">CHAPTER 01 / OPENING LOOKS</span>
++      <span>SS26</span>
++    </header>
++
++    <main>
++      <section class="chapter c1" data-name="CHAPTER 01 / OPENING LOOKS">
++        <div class="scene">
++          <div class="look-stream" id="look-stream">
++            <article class="look-card" data-order="0"><img src="https://images.unsplash.com/photo-1556905055-8f358a7a47b2?auto=format&fit=crop&w=900&q=80" alt="Jacket look" /><h4>Contour Jacket</h4></article>
++            <article class="look-card" data-order="1"><img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=900&q=80" alt="T-shirt look" /><h4>Ghost T-Shirt</h4></article>
++            <article class="look-card" data-order="2"><img src="https://images.unsplash.com/photo-1618354691373-d851c5c3a990?auto=format&fit=crop&w=900&q=80" alt="Hoodie look" /><h4>Core Hoodie</h4></article>
++            <article class="look-card" data-order="3"><img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=900&q=80" alt="Neutral jacket" /><h4>Bone Jacket</h4></article>
++            <article class="look-card" data-order="4"><img src="https://images.unsplash.com/photo-1617137968427-85924c800a22?auto=format&fit=crop&w=900&q=80" alt="Minimal tshirt" /><h4>Ash Tee</h4></article>
++            <article class="look-card" data-order="5"><img src="https://images.unsplash.com/photo-1619603364904-c0498317e145?auto=format&fit=crop&w=900&q=80" alt="Heavy hoodie" /><h4>Carbon Hoodie</h4></article>
++          </div>
++        </div>
++      </section>
++
++      <section class="chapter c2" data-name="CHAPTER 02 / TYPOGRAPHY LAYER">
++        <div class="scene">
++          <div class="type-block">
++            <p>FASHION VISUAL LANGUAGES</p>
++            <h1>CINEMATIC<br />APPAREL<br />SYSTEMS</h1>
++          </div>
++          <div class="look-stream secondary" id="look-stream-secondary">
++            <article class="look-card" data-order="0"><img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=900&q=80" alt="Editorial look" /></article>
++            <article class="look-card" data-order="1"><img src="https://images.unsplash.com/photo-1611312449412-6cefac5dc3e4?auto=format&fit=crop&w=900&q=80" alt="Fashion frame" /></article>
++            <article class="look-card" data-order="2"><img src="https://images.unsplash.com/photo-1506629905607-f0bc4f89f31b?auto=format&fit=crop&w=900&q=80" alt="Streetwear look" /></article>
++          </div>
++        </div>
++      </section>
++
++      <section class="chapter c3" data-name="CHAPTER 03 / CONVERGE">
++        <div class="scene">
++          <h2 class="center-title">COMPOSITION TIGHTENS</h2>
++          <div class="garments layout-c">
++            <article class="garment jacket"></article>
++            <article class="garment tshirt"></article>
++            <article class="garment hoodie"></article>
++          </div>
++        </div>
++      </section>
++
++      <section class="chapter c4" data-name="CHAPTER 04 / ISOLATE">
++        <div class="scene">
++          <div class="single-product">
++            <div class="garment single"><h4>#01</h4></div>
++            <h2>A BASIS</h2>
++            <p>One hero piece. Everything else removed.</p>
++          </div>
++        </div>
++      </section>
++
++      <section class="chapter c5" data-name="CHAPTER 05 / TECH FRAME">
++        <div class="scene tech-scene">
++          <aside>
++            <p class="tiny">VISUAL LANGUAGE</p>
++            <h3>Refresh your wardrobe basis.</h3>
++            <p>Structured fit, neutral palette, premium textile logic.</p>
++          </aside>
++          <div class="spec-card">#01</div>
++          <aside>
++            <p>FABRIC · 510GSM</p>
++            <p>FIT · RELAXED STRUCTURE</p>
++            <p>PALETTE · BONE/CARBON/ASH</p>
++          </aside>
++        </div>
++      </section>
++
++      <section class="chapter c6" data-name="CHAPTER 06 / EDITORIAL CARDS">
++        <div class="scene cards-scene">
++          <article class="panel"><span>CUT 02</span><h4>T-SHIRT FRAME</h4></article>
++          <article class="panel"><span>CUT 03</span><h4>HOODIE FRAME</h4></article>
++          <article class="panel wide"><span>MANIFESTO</span><h4>WE EXPERIMENT WITH UNUSUAL VISUAL DISCIPLINES.</h4></article>
++        </div>
++      </section>
++
++      <section class="chapter c7" data-name="CHAPTER 07 / FINALE">
++        <div class="scene final-scene">
++          <h2>MINIMALISM IS A MUST</h2>
++          <p>ATELIER/VOID / COLLECTION RELEASE 2026</p>
++        </div>
++      </section>
++    </main>
++
++    <script src="script.js"></script>
++  </body>
++</html>
+ 
+EOF
+)
